@@ -2,3 +2,12 @@
 @import "alert";
 @import "navbar";
 @import "card";
+
+h1, {
+  color: #364A5C;
+  text-align: center;
+}
+
+.div-with-image {
+  background-image: image-url("background.jpg")
+}
