@@ -1,1 +1,16 @@
-// Specific CSS for your home-page
+h1, h3, p {
+  color: white;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'Monoton', cursive;
+}
+
+.div-with-image {
+  background-image: image-url("bar.jpg")
+}// Specific CSS for your home-page
+
+label {
+  color: white;
+}
+
+

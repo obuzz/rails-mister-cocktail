@@ -1,5 +1,31 @@
-<h1>Cocktail Selection</h1>
 
-<%= @cocktail.name %>
+<div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'background', crop: :fill %>')">
+  <div class="center-form">
 
-<%= link_to "Cocktail List", cocktails_path %>
+
+      <div class="container">
+        <h1 id="show-cocktail">Cocktail Selection</h1>
+        <h3><%= @cocktail.name %></h3>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-4">
+              <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path @cocktail.photo %>')">
+                <div class="card-doses">
+                  <% @cocktail.doses.each do |dose| %>
+                    <p><%= dose.description %> - <%= dose.ingredient.name %></p>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="back"></div>
+      <%= link_to "Add Doses", new_cocktail_dose_path(@cocktail), class: "btn create-button" %>
+    </div>
+
+  </div>
+</div>
+
+
+
+

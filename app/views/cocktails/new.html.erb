@@ -1,7 +1,6 @@
-<h1>New Cocktail</h1>
-
-<%= render 'form', cocktail: @cocktail %>
-
-
-
-<%= link_to "Cocktail List", cocktails_path %>
+<div class="container-background-image">
+  <div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'background', crop: :fill %>')">
+    <h1>New Cocktail</h1>
+    <%= render 'form', cocktail: @cocktail %>
+  </div>
+</div>

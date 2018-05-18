@@ -30,6 +30,9 @@ gem 'font-awesome-sass', '~> 5.0.9'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 gem 'jquery-rails'
+gem 'figaro', '~> 1.1', '>= 1.1.1'
+gem 'carrierwave', '~> 1.2'
+gem 'cloudinary'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
